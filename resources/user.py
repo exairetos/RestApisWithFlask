@@ -38,4 +38,4 @@ class User(Resource):
         if not user:
             return {'message': 'User not found'}, 404
         user.delete_from_db()
-        return {'message': 'User Deleted.'}
+        return {'message': 'User Deleted.'}, 200
